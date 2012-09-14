@@ -1,0 +1,30 @@
+
+FNSKU                                     NOT NULL CHAR(10)
+ MERCHANT_SKU                              NOT NULL VARCHAR2(40)
+ QUANTITY                                  NOT NULL NUMBER(12)
+ IAID                                      NOT NULL CHAR(10)
+ MERCHANT_SHIPMENT_ID                      NOT NULL NUMBER(38)
+ GL_PRODUCT_GROUP_ID                       NOT NULL NUMBER(38)
+ CREATED_BY                                NOT NULL VARCHAR2(8)
+ CREATION_DATE                             NOT NULL DATE
+ LAST_UPDATED_BY                           NOT NULL VARCHAR2(8)
+ LAST_UPDATED_DATE                         NOT NULL DATE
+ RECEIVED_QUANTITY                                  NUMBER(12)
+ CASE_QUANTITY                                      NUMBER(12)
+ IS_REMOVED                                         CHAR(1)
+ ITEM_CREATE_DATE                                   DATE
+ ITEM_UPDATE_DATE                                   DATE
+ NEED_PO_UPDATE                                     CHAR(1)
+ PREP_OWNER                                         VARCHAR2(10)
+ MERCHANT_SHIPMENT_ITEM_ID                          NUMBER(38)
+ ITEM_PUBLISH_DATE                                  DATE
+ HAS_PUBLISHED_FNSKU                                CHAR(1)
+ MERCH_INVENTORY_COST_CURRENCY                      VARCHAR2(4)
+ MERCH_INVENTORY_COST                               NUMBER(12,2)
+ LEGACY_MERCHANT_ID                                 NUMBER(38)
+ MYI_SHIPMENT_STATUS_ID                             NUMBER(38)
+ NEED_MYI_UPDATE                                    CHAR(1)
+ INVCAPS_QUANTITY_REPORTED                          NUMBER(12)
+
+ 
+PRIMARY KEY (MERCHANT_SHIPMENT_ID,FNSKU)
